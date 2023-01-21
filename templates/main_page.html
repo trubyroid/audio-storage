@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My Audio Storage</title>
+    </head>
+    <body>
+        <h1>Welcome! This is an audio storage.</h1>
+        <h3>Here is the list of uploaded compositions:</h3>
+        <ul>
+            {% for m in uploaded_files %}
+            <li>{{m}}</li>
+            {% endfor %}
+        </ul>
+        <h3>Down below you can uplpoad a new file!</h3>
+        <form action="" method=post enctype=multipart/form-data>
+            <p><input type=file name=file>
+                <input type=submit value=Upload>
+        </form>
+        <ul>
+            {% if not_allowed_extension == 1 %}
+            <h5>Non-audio file detected</h5>
+            {% endif %}
+        </ul>
+        <h5>Allowed extensions: mp3, wav, ogg</h5>
+    </body>
+</html>
