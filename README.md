@@ -1,6 +1,7 @@
-#My Audio Storage
-
-In this project I made a server which contain all names of songs that user post to it.  
+My Audio Storage
+================
+In this project I made a server which contains all songs that user post to it.  
+Also it makes a list of uploaded songs.  
 
 To run server enter this command:  
 python3 server.py
