@@ -1,6 +1,6 @@
 My Audio Storage
 ================
-In this project I made a server which contains all songs that user post to it.  
+In this project I made a flask server which contains all songs that user post to it.  
 Also it makes a list of uploaded songs.  
 
 To run server enter this command:  
